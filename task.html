@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/v5-font-face.min.css"
+        integrity="sha512-q7oLGfg6SLsObFCqz+01EtC3xCKoXujNKLx+aWol8xl6YLF7X9/HXhmlxabjo8uicrLlGhiY3b46ejzQVsGOoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: url(./imges/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+            background-size: cover;
+            height: 100vh;
+
+        }
+
+        .logo {
+            position: relative;
+            top: 23px;
+            left: -43px;
+            position: fixed;
+        }
+
+        .logo a {
+
+            font-size: 30px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            margin-top: 10px;
+            padding: 0px 103px 28px;
+            background-color: #00000082;
+
+
+
+
+        }
+
+        .logo a span {
+            color: red;
+        }
+
+        .nav {
+            width: 76px;
+            height: 56px;
+            margin: 77px;
+            padding: 6px;
+            position: sticky;
+            top: 24px;
+            left: 900px;
+            display: inline;
+            word-spacing: 28px;
+            background-color: black;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: aliceblue;
+            word-spacing: 1px;
+            transition: all .5s ease;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .container .box {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin: 207px 32px;
+        }
+
+        .box h1 {
+            color: white;
+            font-size: 60px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+        .box h1 span {
+            color: red;
+        }
+
+        .box h2 {
+            color: white;
+            font-size: 60px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+        .box h2 span {
+            color: red;
+        }
+
+        .about {
+            padding: 80px 15px;
+            background-color: #ffffff;
+        }
+
+        .about .content {
+            display: flex;
+        }
+
+        .about .content .box1 {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding: 15px;
+        }
+
+        .about .box1 .inner {
+            background-color: #222222;
+
+        }
+
+        .about .box1 .inner .text {
+            padding: 30px;
+        }
+
+        .about .box1 .inner .text h4 {
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
+            padding: 0px 0px 15px;
+            font-weight: 400px;
+            color: antiquewhite;
+            text-transform: capitalize;
+        }
+
+        .about .box1 .inner .text p {
+            letter-spacing: 1px;
+            font-size: 15px;
+            line-height: 20px;
+            color: #ffffff;
+            margin: 0;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .about .box1:nth-child(2) .inner {
+
+            background-color: red;
+        }
+
+        .about .box1 .inner .img img {
+            width: 100%;
+
+        }
+
+        .classes {
+            padding: 80px 0px 50px;
+            background-color: #ffffff;
+        }
+
+        .classes .content {
+            display: flex;
+        }
+
+        .classes .content .box {
+            padding: 15px;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .classes .content .img img {
+            width: 60%;
+        }
+
+        .classes .content .text h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: black;
+            padding: 0px 0px 20px;
+
+        }
+
+        .classes .content .text p {
+            font-size: 15px;
+            line-height: 20px;
+            color: black;
+            margin: 0;
+            padding: 0px 9px 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .classes .content .class-items .item {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .classes .content .class-items .item:nth-child(1) {
+            background-color: #222222;
+
+        }
+
+        .classes .content .class-items .item:nth-child(2) {
+            background-color: red;
+        }
+
+        .classes .content .class-items .item .item-text {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .classes .content .class-items .item .item-text,
+        .classes .content .class-items .item .item-img {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .classes .content .class-items .item .item-img img {
+            width: 100%;
+            height: 260px;
+            display: block;
+
+        }
+
+        .classes .content .class-items .item .item-img .prise {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #ffffff;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .classes .content .class-items .item:nth-child(1) .item-img .prise {
+            background-color: red;
+            left: 0;
+            top: 0;
+
+        }
+
+        .classes .content .class-items .item:nth-child(2) .item-img .prise {
+            background-color: black;
+            right: 0;
+            top: 0;
+
+        }
+
+        .classes .content .class-items .item .item-text h4 {
+            font-size: 20px;
+            margin: 0;
+            padding: 0px 0px 15px;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .classes .content .class-items .item .item-text p {
+            letter-spacing: 1px;
+            font-size: 15px;
+            line-height: 20px;
+            color: #ffffff;
+            margin: 0;
+            font-weight: 300;
+            text-align: center;
+            padding: 0 0 10px;
+        }
+
+        .classes .content .class-items .item .item-text a {
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        .classes .content .class-items .item:nth-child(1) .item-text a {
+            color: red;
+        }
+
+        .classes .content .class-items .item:nth-child(2) .item-text a {
+            color: black;
+        }
+
+        .start-today {
+            background-color: #222222;
+        }
+
+        .start-today .content {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .start-today .content .box {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0px 15px;
+
+        }
+
+        .start-today .content .img img {
+            width: 100%;
+            display: block;
+
+        }
+
+        .start-today .content .text h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: #ffffff;
+            padding: 0px 0px 20px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .start-today .content .text p {
+            font-size: 15px;
+            line-height: 20px;
+            color: #ffffff;
+            margin: 0;
+            padding: 0px 0px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+
+        }
+
+        .start-today .content .text .btn {
+            padding: 8px 30px;
+            background-color: red;
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid transparent;
+            transition: all .5s ease;
+
+
+        }
+
+        .start-today .content .text .btn:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+            background-color: transparent;
+        }
+
+        .schedule {
+            padding: 80px 0px;
+        }
+
+        .schedule .content {
+            display: flex;
+
+        }
+
+        .schedule .content .box {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 15px;
+        }
+
+        .schedule .content .text h2 {
+
+            font-size: 30px;
+            font-weight: 500;
+            color: #000000;
+            padding: 0px 0px 20px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .schedule .content .text p {
+            font-size: 15px;
+            line-height: 20px;
+            color: #222222;
+            margin: 0;
+            padding: 0px 0px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+
+        }
+
+        .schedule .content .text img {
+
+            width: 100%;
+
+        }
+
+        .schedule .content .timing .table {
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+        .schedule .content .timing .table td {
+            border: 1px solid #dfdfdf;
+            padding: 8px;
+            font-size: 15px;
+            text-align: center;
+            color: #222222;
+        }
+
+        .schedule .content .timing .table tr:nth-child(even) td.day {
+            background-color: #222222;
+            color: #ffffff;
+        }
+
+        .schedule .content .timing .table tr:nth-child(odd) td.day {
+            background-color: #444;
+            color: #ffffff;
+        }
+
+        .schedule .content .timing .table tr:nth-child(1) td.day {
+            background-color: red;
+            color: #ffffff;
+        }
+
+        .schedule .content .timing .table tr td.day {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        .gallery .content {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .gallery .content .box {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .gallery .content .box img {
+            display: block;
+            width: 100%;
+            filter: grayscale(100%);
+            transition: all .5s ease;
+        }
+
+        .gallery .content .box img:hover {
+            filter: grayscale(0%);
+        }
+
+        .gallery h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: #000000;
+            padding: 0px 0px 20px;
+            text-align: center;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .price {
+            padding: 80px 0px;
+            background-color: #ffffff;
+        }
+
+        .price h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: #000000;
+            padding: 0px 0px 20px;
+            text-align: center;
+        }
+
+        .price .title-p {
+            font-size: 15px;
+            line-height: 20px;
+            color: #222222;
+            margin: 0;
+            padding: 0px 20% 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .price .content {
+            display: flex;
+
+        }
+
+        .price .content .box {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding: 15px;
+        }
+
+        .price .content .box .inner .img img {
+            width: 100%;
+        }
+
+        .price .content .inner {
+            background-color: #d3c8c8;
+        }
+
+        .price .content .inner .price-tag {
+            padding: 15px;
+            font-size: 20px;
+            background-color: red;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .price .content .inner .text {
+            padding: 30px 15px;
+            text-align: center;
+
+        }
+
+        .price .content .inner .text h3 {
+            font-size: 24px;
+            color: #222222;
+            margin: 0;
+            padding: 0 0 20px;
+        }
+
+        .price .content .inner .text p {
+            font-size: 15px;
+            line-height: 20px;
+            color: #222222;
+            margin: 0;
+            padding: 0px 0 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .price .content .box .inner .text .btn {
+            padding: 8px 30px;
+            background-color: red;
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid transparent;
+            transition: all .5s ease;
+            margin-top: 10px;
+        }
+
+        .price .content .box .inner .text .btn:hover {
+            color: #160101;
+            border-color: #ffffff;
+            background-color: transparent;
+        }
+
+        .contact {
+            padding: 80px 0px;
+            background-color: #222222;
+        }
+
+        .contact .content {
+            display: flex;
+
+        }
+
+        .contact .content .box {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 15px;
+
+        }
+
+        .contact .content .form input,
+        .contact .content .form textarea {
+            height: 45px;
+            width: 100%;
+            padding: 6px 12px;
+            margin-bottom: 25px;
+            background-color: transparent;
+            border: 1px solid #ffffff;
+
+        }
+
+        .contact .content .form input::placeholder,
+        .contact .content .form textarea::placeholder {
+            color: #ffffff;
+        }
+
+        .contact .content .form textarea {
+            height: 100px;
+        }
+
+        .contact .content .form button {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            height: 45px;
+            padding: 0px 30px;
+            background-color: #c50606;
+            color: #f6f3f3;
+            font-size: 15pxs;
+            transition: all .5s ease;
+        }
+
+        .contact .content .form button:hover {
+            background-color: #ffffff;
+            color: red;
+        }
+
+        .contact .content .text p {
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+            margin: 0;
+            padding: 0px 0px 17px;
+        }
+
+        .contact .content .text h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: red;
+            padding: 0px 103px 28px;
+        }
+
+        .contact .content .text h5 {
+            font-size: 30px;
+            font-weight: 500;
+            color: #ffffff;
+            padding: 247px 121px 30px;
+        }
+
+        .contact .content .text h5 span {
+            color: #b50e0e;
+        }
+
+        .contact .content .text .info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact .content .text .info li {
+            display: block;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-size: 16px;
+            letter-spacing: 1px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .contact .content .text .info li span {
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: 5px;
+            font-size: 15px;
+            color: red;
+        }
+
+        .contact .content .text .info .social {
+            padding-top: 30px;
+        }
+
+        .contact .content .text .social i {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: red;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all .5s ease;
+            border: 1px solid transparent;
+
+        }
+
+        .contact .content .text .social i:hover {
+            background-color: transparent;
+            border-color: #ffffff;
+        }
+
+        .contact .content .text .social i {
+            color: #ffffff;
+            font-size: 15px;
+
+        }
+
+        .contact .content .text .copy {
+            border-top: 1px solid #333333;
+            margin-top: 47px;
+            padding-top: 16px;
+            font-size: 20px;
+            color: #c5c5c5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <a href="">Fitness <span>Clup</span></a>
+        </div>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Classes</a>
+            <a href="">Schedule</a>
+            <a href="">Price</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="box">
+            <h1>It's <span>gym</span> time. let's go</h1>
+            <h2>We are ready to <span>fit you</span></h2>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="containr">
+            <div class="content">
+                <div class="box1">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="./imges/alora-griffiths-TuzrzArccvc-unsplash.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Best Training</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis provident quidem eos quis veritatis,
+                                excepturi tempora nesciunt iusto a velit nihil dolor perferendis quisquam saepe
+                                distinctio neque vitae nam itaque!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="./imges/john-arano-h4i9G-de7Po-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="text">
+                            <h4>Free Consultaion</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis provident quidem eos quis veritatis,
+                                excepturi tempora nesciunt iusto a velit nihil dolor perferendis quisquam saepe
+                                distinctio neque vitae nam itaque!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="./imges/anastase-maragos-7kEpUPB8vNk-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="text">
+                            <h4>Build perfect Body</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis provident quidem eos quis veritatis,
+                                excepturi tempora nesciunt iusto a velit nihil dolor perferendis quisquam saepe
+                                distinctio neque vitae nam itaque!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="classes">
+        <div class="containr">
+            <div class="content">
+                <div class=" box img">
+                    <img src="./imges/total-shape-wXBK9JrM0iU-unsplash.jpg" alt="">
+                </div>
+                <div class="box text">
+                    <h2> Our Clacess</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, architecto unde neque quidem,
+                        provident facilis, facere id harum eos aliquid atque porro! Eos,
+                        nemo quaerat cupiditate molestias consectetur laboriosam placeat!</p>
+                    <div class="class-items">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./imges/graham-mansfield-E8VOttj22s4-unsplash.jpg" alt="">
+                                <div class="prise">
+                                    $99
+                                </div>
+
+                            </div>
+                            <div class="item-text">
+                                <h4>Stretching Training</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Tempora aspernatur adipisci repellat? Deserunt similique laudantium .</p>
+                                <a href="">Get Details</a>
+
+                            </div>
+                        </div>
+                        <div class="item">
+
+                            <div class="item-text">
+                                <h4>Stretching Training</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Tempora aspernatur adipisci repellat? Deserunt similique laudantium .</p>
+                                <a href="">Get Details</a>
+
+                            </div>
+                            <div class="item-img">
+                                <img src="./imges/graham-mansfield-E8VOttj22s4-unsplash.jpg" alt="">
+                                <div class="prise">
+                                    $99
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="start-today">
+        <div class="coontainr">
+            <div class="content">
+                <div class=" box text">
+                    <h2>Start Your Training Today</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, natus molestiae tenetur,
+                        ea quibusdam velit quae, hic nostrum in ratione perspiciatis.
+                        Odio dolore expedita soluta ratione quisquam libero iusto commodi!</p>
+                    <a href="" class="btn"> Start Now</a>
+
+                </div>
+                <div class="box img">
+                    <img src="./imges/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule">
+        <div class="containr">
+            <div class="content">
+                <div class=" box text">
+                    <h2>Classes Schedule</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe laborum odit sapiente sunt consequuntur eum,ut error id.
+                        Maxime repellat dolores eius eaque neque illo natus, tempore sunt aliquid praesentium?</p>
+                    <img src="./imges/clem-onojeghuo-n6gnCa77Urc-unsplash.jpg" alt="">
+
+                </div>
+                <div class=" box timing">
+                    <table class="table">
+                        <Tbody>
+                            <tr>
+                                <td class="day">Monday</td>
+                                <td><strong>9:00 AM</strong></td>
+                                <td>Body Building <br> 9:00 to 10:00 AM</td>
+                                <td>Room No:210</td>
+
+                            </tr>
+                            <tr>
+                                <td class="day">Tuesday</td>
+                                <td><strong>9:00 AM</strong></td>
+                                <td>Body Building <br> 9:00 to 10:00 AM</td>
+                                <td>Room No:210</td>
+
+                            </tr>
+                            <tr>
+                                <td class="day">wednesday</td>
+                                <td><strong>9:00 AM</strong></td>
+                                <td>Body Building <br> 9:00 to 10:00 AM</td>
+                                <td>Room No:210</td>
+
+                            </tr>
+                            <tr>
+                                <td class="day">Thursday</td>
+                                <td><strong>9:00 AM</strong></td>
+                                <td>Body Building <br> 9:00 to 10:00 AM</td>
+                                <td>Room No:210</td>
+
+                            </tr>
+                            <tr>
+                                <td class="day">friday</td>
+                                <td><strong>9:00 AM</strong></td>
+                                <td>Body Building <br> 9:00 to 10:00 AM</td>
+                                <td>Room No:210</td>
+
+                            </tr>
+
+                        </Tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Work Out gallery</h2>
+        <div class="content">
+            <div class="box">
+                <img src="./imges/alexander-redl-d3bYmnZ0ank-unsplash.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./imges/boxed-water-is-better-P4AIjQw1BuY-unsplash.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./imges/julia-rekamie-Z72YujnOrlY-unsplash.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./imges/logan-weaver-lgnwvr-9D_rUDe7xvA-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="price">
+        <div class="containr">
+            <h2>Choose Your package</h2>
+            <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, praesentium? .</p>
+            <div class="content">
+                <div class="box">
+                    <div class="inner">
+                        <div class="price-tag">
+                            $59/Month
+
+                        </div>
+                        <div class="img">
+                            <img src="./imges/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="text">
+                            <h3>Body Building Training</h3>
+                            <p>Get Free WIFI</p>
+                            <p>Month to Month</p>
+                            <p>No Time Restrictions</p>
+                            <p>Gym And Cardio</p>
+                            <p>Service locker Rooms</p>
+                            <a href="" class="btn"> Join Now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="inner">
+                        <div class="price-tag">
+                            $69/Month
+
+                        </div>
+                        <div class="img">
+                            <img src="./imges/boxed-water-is-better-P4AIjQw1BuY-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="text">
+                            <h3>Body Building Training</h3>
+                            <p>Get Free WIFI</p>
+                            <p>Month to Month</p>
+                            <p>No Time Restrictions</p>
+                            <p>Gym And Cardio</p>
+                            <p>Service locker Rooms</p>
+                            <a href="" class="btn"> Join Now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="inner">
+                        <div class="price-tag">
+                            $99/Month
+
+                        </div>
+                        <div class="img">
+                            <img src="./imges/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="text">
+                            <h3>Body Building Training</h3>
+                            <p>Get Free WIFI</p>
+                            <p>Month to Month</p>
+                            <p>No Time Restrictions</p>
+                            <p>Gym And Cardio</p>
+                            <p>Service locker Rooms</p>
+                            <a href="" class="btn"> Join Now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="containr">
+            <div class="content">
+                <div class="box form">
+                    <form>
+                        <input type="text" placeholder="Ener  Name">
+                        <input type="text" placeholder="Ener Email">
+                        <input type="text" placeholder="Ener mobile">
+                        <textarea placeholder="Enter message"></textarea>
+                        <button type="submit"> Send message</button>
+
+
+                    </form>
+
+                </div>
+                <div class="box text">
+                    <h2>Get Connected With Gym</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nisi repudiandae
+                        officia autem rem! Dicta voluptatem magnam.</p>
+                    <div class="info">
+                        <ul>
+                            <li><span class="fa fa-map-marker"></span> 10th Of Ramadan</li>
+                            <li><span class="fa fa-phone"></span> 01272029912</li>
+                            <li><span class="fa fa-envelope"></span> info@gym.com</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <a href=""><span><i class="fa-brands fa-square-facebook"></i></span></a>
+                        <a href=""><i class="fa-brands x fa-google-plus-g"></i></a>
+                        <a href=""> <i class="fa-solid fa-location-dot"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                    <div class="copy">
+                        copyright by..Doaa Abdelazez
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
